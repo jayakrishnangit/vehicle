@@ -1,0 +1,62 @@
+{% extends 'mechanicbase.html' %}
+{% load static %}
+{% block content %}
+
+	<div class="wrapper">
+
+
+		<div class="row">
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-primary">
+					<p>
+						<i class="fas fa-tasks"></i>
+					</p>
+					<h3>{{new_work_assigned}}</h3>
+					<p>New Work Assigned</p>
+				</div>
+			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-warning">
+					<p>
+						<i class="fas fa-spinner"></i>
+					</p>
+					<h3>{{work_in_progress}}</h3>
+					<p>Work In Progress</p>
+				</div>
+			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-success">
+					<p>
+						<i class="fas fa-check-circle"></i>
+					</p>
+					<h3>{{work_completed}}</h3>
+					<p>Work Completed</p>
+				</div>
+			</div>
+			<div class="col-3 col-m-6 col-sm-6">
+				<div class="counter bg-danger">
+					<p>
+						<i class="fas fa-rupee-sign"></i>
+					</p>
+					<h3>{{salary}}</h3>
+					<p>Salary</p>
+				</div>
+			</div>
+		</div><br><br><br><br>
+		<marquee behavior="scroll" direction="left">
+		 <img src="{% static "ford.jpg" %}" width="120" height="80" alt="car" />
+			<img src="{% static "kia.jpg" %}" width="120" height="80" alt="car" />
+		 <img src="{% static "maha.jpg" %}" width="120" height="80" alt="car" />
+		 <img src="{% static "mg.jpg" %}" width="120" height="80" alt="" />
+		 <img src="{% static "volvo.jpg" %}" width="120" height="80" alt="" />
+		 <img src="{% static "vw.jpg" %}" width="120" height="80" alt="" />
+		 <img src="{% static "tata1.jpg" %}" width="120" height="80" alt="" />
+		 <img src="{% static "ford.jpg" %}" width="120" height="80" alt="" />
+		 <img src="{% static "kia.jpg" %}" width="120" height="80" alt="" />
+	 </marquee>
+	 <br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+
+
+
+{% endblock content %}
